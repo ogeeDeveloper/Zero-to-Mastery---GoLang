@@ -19,6 +19,25 @@ package main
 
 import "fmt"
 
-func main() {
+func greetPerson(firstName string) {
+	fmt.Println("Hello, how are you doing ", firstName)
+}
 
+func sumThreeNums(num1, num2, num3 int) int {
+	return num1 + num2 + num3
+}
+
+func printNum(numberGiven int) int {
+	return numberGiven
+}
+
+// func printTwoNumbers(oneNum, twoNum int) int {
+// 	return oneNum, twoNum
+// }
+
+func main() {
+	sumThreeNums(2, 5, 6)
+	providedNum := printNum(3)
+	fmt.Println("Number provvided is", providedNum)
+	greetPerson("Mary")
 }
