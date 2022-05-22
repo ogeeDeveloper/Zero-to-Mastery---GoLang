@@ -3,10 +3,6 @@
 //  of a rectangle.
 //
 //--Requirements:
-//* Create a rectangle structure containing its coordinates
-//* Using functions, calculate the area and perimeter of a rectangle,
-//  - Print the results to the terminal
-//  - The functions must use the rectangle structure as the function parameter
 //* After performing the above requirements, double the size
 //  of the existing rectangle and repeat the calculations
 //  - Print the new results to the terminal
@@ -17,8 +13,25 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+//* Create a rectangle structure containing its coordinates
+type rectangle struct {
+	length, width int
+}
+
+//* Using functions, calculate the area and perimeter of a rectangle,
+//  - Print the results to the terminal
+//  - The functions must use the rectangle structure as the function parameter
+func calculateArea(length, width int) int {
+	return length * width
+}
 
 func main() {
-
+	rectangle.length = 4
+	rectangle.width = 6
+	result := calculateArea(rectangle.length, rectangle.width)
+	fmt.Println(result)
 }
